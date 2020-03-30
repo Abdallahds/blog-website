@@ -1,0 +1,11 @@
+<%-include("partials/header.ejs")-%>
+<h1>Home Page </h1>
+<p>Welcome to my blog website , this website is for learning purposes only , without a database.</p>
+<p> you can add new post using the compose page in the nav bar</p>
+<% posts.forEach(function(element){ %>
+  <h1><%= element.title %></h1>
+  <p class="homep"><%= element.contant %></p><a href="/post/<%= element.title %>">Read more</a>
+<% }); %>
+
+
+<%-include("partials/footer.ejs")-%>

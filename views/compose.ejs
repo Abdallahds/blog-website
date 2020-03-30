@@ -1,0 +1,12 @@
+<%-include("partials/header.ejs")%>
+<h1>compose Page</h1>
+<p>write your blog message.</p>
+
+<form action="/compose" method="post">
+  <input class="form-control" type="text" name="Title" value="" placeholder="Title">
+  <br>
+  <br>
+  <textarea class="form-control" name="blog" rows="8" cols="80" style="resize:none;" placeholder="What's in your mind...."></textarea>
+  <br><button class="btn btn-primary" type="submit" name="submit">Publish.</button>
+</form>
+<%-include("partials/footer.ejs")-%>
